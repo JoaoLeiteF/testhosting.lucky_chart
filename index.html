@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Contador de Sorte</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         header {
             display: block;
-            background-color: #f2f2f2;
+            background-color: #fff;
             padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .headerBox {
+            display: flex;
+            justify-content: center;
         }
 
         body {
@@ -20,24 +27,99 @@
         }
 
         main {
-            display: block;
+            display: flex;
+            background-image: url('https://i.ibb.co/7NnwTjH/shiny-pokemon-wallpaper-by-supernovash.jpg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .column {
+            width: 45%;
+            float: left;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+        }
+
+        .divLine {
+            border: 2px solid black;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div style="display: flex; justify-content: center;">
-            <img style="height: 70px;" src="https://i.picasion.com/gl/92/hSNY.gif">
+        <div class="headerBox">
+            <img style="width: 100%;" src="https://i.picasion.com/gl/92/hSNY.gif">
         </div>
-        <div style="display: flex; justify-content: center; margin-top: 10px;">
-            <img style="height: 25px;" src="https://i.picasion.com/gl/92/hSO1.gif" />
+        <div class="headerBox" style="margin-top: 15px;">
+            <img style="width: 25%;" src="https://i.picasion.com/gl/92/hSO1.gif" />
         </div>
     </header>
 
     <main>
-        <div style="background-color: #f2f2f2; padding: 100px; margin-top: 10px;">
-            AQUI!
+        <div class="container">
+            <div class="column">
+                <h1 style="text-align: center; margin-bottom: 0px;">
+                    Sorte Semanal
+                </h1>
+                <div class="divLine"></div>
+                <div>
+                    <h2>SETEMBRO</h2>
+                    <div>
+                        <h3>1 Semana - 10/09 a 16/09: 8/10</h3>
+                        <h3>2 Semana - 17/09 a 23/09: 7/10</h3>
+                        <h3>3 Semana - 24/09 a 30/09: ?/10</h3>
+                    </div>
+                </div>
+                <div>
+                    <h2>OUTUBRO</h2>
+                    <div>
+                        <h3>1 Semana - 01/10 a 07/10: 4/10</h3>
+                        <h3>2 Semana - 08/10 a 14/10: ?/10</h3>
+                        <h3>3 Semana - 15/10 a 21/10: 9/10</h3>
+                        <h3>4 Semana - 22/10 a 28/10: 9/10</h3>
+                    </div>
+                </div>
+                <div>
+                    <h2>NOVEMBRO</h2>
+                    <div>
+                        <h3>1 Semana - 29/11 a 04/11: 8.5/10</h3>
+                        <h3>2 Semana - 05/11 a 11/11: 6/10</h3>
+                        <h3>3 Semana - 12/11 a 18/11: 7/10</h3>
+                        <h3>4 Semana - 19/11 a 25/11: 7.5/10</h3>
+                    </div>
+                </div>
+                <div>
+                    <h2>DEZEMBRO</h2>
+                    <div>
+                        <h3>1 Semana - 26/12 a 02/12: 8/10</h3>
+                        <h3>2 Semana - 03/12 a 09/12: 10/10</h3>
+                        <h3>3 Semana - 10/12 a 16/12: 7/10</h3>
+                        <h3>4 Semana - 17/12 a 23/12: 11/10</h3>
+                        <!--<h3>5 Semana - 24/12 a 30/12: ?/10</h3>-->
+                    </div>
+                </div>
+                <div class="divLine"></div>
+                <div style="text-align: center;">
+                    <h2>Média de Sorte: 7.9</h2>
+                </div>
+            </div>
+            <div class="column">
+                <h1 style="text-align: center; margin-bottom: 0px;">Informações Adicionais</h1>
+                <div class="divLine"></div>
+                <div>
+
+                </div>
+            </div>
         </div>
     </main>
 </body>
