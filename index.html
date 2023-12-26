@@ -20,7 +20,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #efa5c8;
+            background-color: #a92766bf;
             color: #333;
             margin: 3;
             padding: 3;
@@ -56,6 +56,17 @@
 </head>
 
 <body>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var sf = new Snowflakes({
+            color: "#0095c2",
+            count: 60,
+            minOpacity: 1,
+            minSize: 25,
+            maxSize: 50
+        });
+    </script>
+
     <header>
         <div class="headerBox">
             <img style="width: 100%;" src="https://i.picasion.com/gl/92/hSNY.gif">
@@ -117,7 +128,6 @@
                 <h1 style="text-align: center; margin-bottom: 0px;">Informações Adicionais</h1>
                 <div class="divLine"></div>
                 <div>
-
                 </div>
             </div>
         </div>
